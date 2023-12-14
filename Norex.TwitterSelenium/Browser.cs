@@ -12,6 +12,10 @@ namespace Norex.TwitterSelenium
     /// </summary>
     internal class Browser
     {
+        /// <summary>
+        /// Create a Chrome driver and load the browser
+        /// </summary>
+        /// <param name="OpenBrowser">set it false to start without oppening browser</param>
         public Browser(bool OpenBrowser = true)
         {
             if (OpenBrowser)
