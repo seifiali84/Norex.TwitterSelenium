@@ -33,5 +33,21 @@ namespace Norex.TwitterSelenium
             }
         }
         private ChromeDriver driver { set; get; }
+
+        #region Functions
+
+        /// <summary>
+        /// this function goes to target url
+        /// </summary>
+        /// <param name="url">the url you want to browser go to</param>
+        public void GoToUrl(string url)
+        {
+            if (driver.Url != url)
+            {
+                driver.Navigate().GoToUrl(url);
+            }
+        }
+
+        #endregion
     }
 }
