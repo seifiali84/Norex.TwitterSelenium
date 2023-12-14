@@ -47,7 +47,14 @@ namespace Norex.TwitterSelenium
                 driver.Navigate().GoToUrl(url);
             }
         }
-
+        /// <summary>
+        /// Refresh the Current Page of Browser.
+        /// </summary>
+        public void RefreshPage()
+        {
+            driver.Navigate().Refresh();
+        }
+        
         #endregion
     }
 }
